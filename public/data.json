@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80",
+        "name": "Study",
+        "text": "Study is very important for better future. If you read daily, then you can get a good result in the examination.",
+        "time": 40
+    },
+    {
+        "id": 2,
+        "img": "https://sph.umich.edu/pursuit/2020posts/2020images/Sleep101.jpg",
+        "name": "Sleep",
+        "text": "Sleep is important for a human. If you want to increase your activity then you have to sleep 8 hours daily.",
+        "time": ""
+    },
+    {
+        "id": 3,
+        "img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80",
+        "name": "Coding",
+        "text": "Coding is a very interesting field. If you can build your logic, then you will feel awesome with coding. It will become a part of your life.",
+        "time": 45
+    },
+    {
+        "id": 4,
+        "img": "https://images.unsplash.com/photo-1596193433486-02333accdc13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "name": "Prayer",
+        "text": "I am a muslim. I have to pray for five times in the mosque. It is mandatory for me. If you pray five times, then you will feel a peace in your heart.",
+        "time": 30
+    },
+    {
+        "id": 5,
+        "img": "https://images.unsplash.com/photo-1631194758628-71ec7c35137e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+        "name": "Outdoor game",
+        "text": "Outdoor game is important for our health. If you play outside in the afternoon, then your mind will be fresh and your body will be fit.",
+        "time": 45
+    },
+    {
+        "id": 6,
+        "img": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "name": "Exercise",
+        "text": "Exercise is very important for a healthy health. You can do exercise in the morning or in the evening. You can run or push-up or anything as you wish.",
+        "time": 30
+    }
+]
