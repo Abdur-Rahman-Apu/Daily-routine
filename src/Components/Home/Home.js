@@ -1,12 +1,15 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Activities from '../Activities/Activities';
+import Calculation from '../Calculation/Calculation';
+
 
 const Home = () => {
     return (
         <div>
-            <h1>This is a home</h1>
-            <FontAwesomeIcon icon={faCoffee} />
+
         </div>
     );
 };
