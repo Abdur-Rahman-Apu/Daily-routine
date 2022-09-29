@@ -52,15 +52,15 @@ const Calculation = (props) => {
             <div className="mx-3 exercise-detail">
 
                 <h5 className='mt-5 mb-4'>Exercise Details</h5>
-                <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center p-2 rounded-3  time-container my-4'>
-                    <h6>Exercise time</h6>
-                    <p className='text-muted'>{totalTime} seconds</p>
+                <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center p-2 rounded-3  time-container my-4 p-3'>
+                    <h6 className='mb-0'>Exercise time</h6>
+                    <p className='text-muted mb-0'>{totalTime} seconds</p>
                 </div>
 
 
-                <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center p-2 rounded-3 time-container my-4'>
-                    <h6>Break time</h6>
-                    <p className='text-muted'>{breakTime} seconds</p>
+                <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center p-3 rounded-3 time-container my-4'>
+                    <h6 className='mb-0'>Break time</h6>
+                    <p className='text-muted mb-0'>{breakTime} seconds</p>
                 </div>
 
                 <div className='text-center '>

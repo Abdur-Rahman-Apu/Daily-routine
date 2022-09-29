@@ -1,10 +1,11 @@
 import React from 'react';
+import './Questions.css'
 
 const Questions = () => {
     return (
         <div>
             <div className="title text-center my-5">
-                <h2>Learn to earn knowledge.</h2>
+                <h2 className='question-part-title'>Learn to earn knowledge.</h2>
             </div>
 
             <div className='m-3'>

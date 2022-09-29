@@ -10,13 +10,13 @@ const Activities = (props) => {
 
             <div className="title d-flex align-items-center">
                 <img className='img-fluid img' src={logo} alt="img" />
-                <h3 className='fw-bold ms-2'>Daily Routine</h3>
+                <h3 className='fw-bold ms-2 top-title'>Daily Routine</h3>
             </div>
 
 
 
             <div>
-                <p className='fw-bold my-3'>Select Today's activities</p>
+                <p className='fw-bold my-4'>Select Today's activities</p>
 
                 <div className='row row-cols-1 row-cols-lg-3 gy-4'>
                     {
