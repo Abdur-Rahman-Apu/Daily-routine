@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from 'react';
+
 import logo from '../../Images/notebook.png';
 import Activity from '../Activity/Activity';
 import './Activities.css';
 
-const Activities = () => {
-
-    const [activities, setActivities] = useState([]);
-
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setActivities(data))
-    }, [])
+const Activities = (props) => {
 
     return (
         <div className='activities-container'>
@@ -28,7 +20,7 @@ const Activities = () => {
 
                 <div className='row row-cols-3 gy-4'>
                     {
-                        activities.map(activity => <Activity key={activity.id} activities={activity}></Activity>)
+                        props.activities.map(activity => <Activity key={activity.id} handleBtn={props.handleBtn} activities={activity}></Activity>)
                     }
                 </div>
             </div>

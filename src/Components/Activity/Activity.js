@@ -2,7 +2,7 @@ import React from 'react';
 import './Activity.css';
 
 const Activity = (props) => {
-    const { img, name, time, text } = props.activities;
+    const { id, img, name, time, text } = props.activities;
     return (
         <div className='col'>
             <div className='card h-100'>
@@ -13,7 +13,7 @@ const Activity = (props) => {
                     <p><small>Time required:</small> {time}s</p>
                 </div>
                 <div className="card-footer bg-white text-center">
-                    <button type='button' className='load-btn py-2 fw-bold text-white rounded-2'>Add to list</button>
+                    <button type='button' className='load-btn py-2 fw-bold text-white rounded-2' onClick={() => props.handleBtn(props.activities)}>Add to list</button>
                 </div>
             </div>
 

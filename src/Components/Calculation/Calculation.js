@@ -1,14 +1,26 @@
 import React from 'react';
+import { useState } from 'react';
 import './Calculation.css';
 
-const Calculation = () => {
+const Calculation = (props) => {
+    let totalTime = 0;
+    for (const item of props.items) {
+        totalTime += item.time;
+    }
+
+    const [breakTime, setBreakTime] = useState("")
+
+    const handleBreakTime = (e) => {
+        setBreakTime(e.target.innerText);
+    }
+
     return (
         <div>
             <div className='mx-3 break-section'>
                 <h5 className='my-3'>Add a break</h5>
 
                 <div className='d-flex justify-content-around p-4 btn-container rounded-3'>
-                    <button className='border-0  p-2 rounded-circle  break-btn'><h6>10s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0  p-2 rounded-circle  break-btn'><h6>10s</h6></button>
                     <button className='border-0 p-2 ms-2 rounded-circle break-btn'><h6>20s</h6></button>
                     <button className='border-0 p-2 ms-2 rounded-circle break-btn'><h6>30s</h6></button>
                     <button className='border-0  p-2 ms-2 rounded-circle break-btn'><h6>40s</h6></button>
@@ -22,13 +34,13 @@ const Calculation = () => {
                 <h5 className='mt-5 mb-4'>Exercise Details</h5>
                 <div className='d-flex justify-content-between align-items-center p-2 rounded-3  time-container my-4'>
                     <h6>Exercise time</h6>
-                    <p className='text-muted'>{ } seconds</p>
+                    <p className='text-muted'>{totalTime} seconds</p>
                 </div>
 
 
                 <div className='d-flex justify-content-between align-items-center p-2 rounded-3 time-container my-4'>
                     <h6>Break time</h6>
-                    <p className='text-muted'>{ } seconds</p>
+                    <p className='text-muted'>{breakTime.substring(0, breakTime.length - 1)} seconds</p>
                 </div>
 
                 <div className='text-center '>
