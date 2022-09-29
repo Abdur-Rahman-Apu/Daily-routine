@@ -5,6 +5,8 @@ import './Activities.css';
 
 const Activities = (props) => {
 
+    const { activities, handleBtn } = props;
+
     return (
         <div className='activities-container'>
 
@@ -20,7 +22,7 @@ const Activities = (props) => {
 
                 <div className='row row-cols-1 row-cols-lg-3 gy-4'>
                     {
-                        props.activities.map(activity => <Activity key={activity.id} handleBtn={props.handleBtn} activities={activity}></Activity>)
+                        activities.map(activity => <Activity key={activity.id} handleBtn={handleBtn} activities={activity}></Activity>)
                     }
                 </div>
             </div>

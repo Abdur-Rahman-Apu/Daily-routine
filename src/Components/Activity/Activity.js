@@ -1,8 +1,8 @@
 import React from 'react';
 import './Activity.css';
 
-const Activity = (props) => {
-    const { img, name, time, text } = props.activities;
+const Activity = ({ activities, handleBtn }) => {
+    const { img, name, time, text } = activities;
     return (
         <div className='col'>
             <div className='card h-100'>
@@ -13,7 +13,7 @@ const Activity = (props) => {
                     <p className='fw-bold'><small>Time required:</small> {time} min</p>
                 </div>
                 <div className="card-footer bg-white text-center">
-                    <button type='button' className='load-btn py-2 fw-bold text-white rounded-2' onClick={() => props.handleBtn(props.activities)}>Add to list</button>
+                    <button type='button' className='load-btn py-2 fw-bold text-white rounded-2' onClick={() => handleBtn(activities)}>Add to list</button>
                 </div>
             </div>
 

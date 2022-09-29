@@ -6,13 +6,13 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Calculation = (props) => {
+const Calculation = ({ items }) => {
     let totalTime = 0;
-    for (const item of props.items) {
+    for (const item of items) {
         totalTime += item.time;
     }
 
-    const [breakTime, setBreakTime] = useState("")
+    const [breakTime, setBreakTime] = useState(0)
 
     const handleBreakTime = (e) => {
         setBreakTime(e.target.innerText);
@@ -39,26 +39,25 @@ const Calculation = (props) => {
             <div className='mx-3 break-section'>
                 <h5 className='mb-3 mt-5 fw-bold'>Add a break</h5>
 
-                <div className='d-flex flex-column flex-lg-row align-items-center justify-content-around p-4 btn-container rounded-3'>
+                <div className='d-flex flex-row align-items-center justify-content-around p-4 btn-container rounded-3'>
                     <button onClick={(e) => handleBreakTime(e)} className='border-0  p-2 rounded-circle  break-btn'><h6>10s</h6></button>
-                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2 mt-3 mt-lg-0 ms-2 rounded-circle break-btn'><h6>20s</h6></button>
-                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2 mt-3 mt-lg-0 ms-2 rounded-circle break-btn'><h6>30s</h6></button>
-                    <button onClick={(e) => handleBreakTime(e)} className='border-0  p-2 mt-3 mt-lg-0 ms-2 rounded-circle break-btn'><h6>40s</h6></button>
-                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2 mt-3 mt-lg-0 ms-2 rounded-circle break-btn'><h6>50s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2  mt-lg-0 ms-2 rounded-circle break-btn'><h6>20s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2 mt-lg-0 ms-2 rounded-circle break-btn'><h6>30s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0  p-2  mt-lg-0 ms-2 rounded-circle break-btn'><h6>40s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2 mt-lg-0 ms-2 rounded-circle break-btn'><h6>50s</h6></button>
                 </div>
             </div>
 
 
-            <div className="mx-3 exercise-detail">
-
-                <h5 className='mt-5 mb-4 fw-bold'>Exercise Details</h5>
-                <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center p-2 rounded-3  time-container my-4 p-3'>
-                    <h6 className='mb-0 fw-bold'>Exercise time</h6>
+            <div className="mx-3">
+                <h5 className='mt-5 mb-4 fw-bold'>Activity Details</h5>
+                <div className='d-flex  justify-content-between align-items-center p-2 rounded-3  time-container my-4 p-3'>
+                    <h6 className='mb-0 fw-bold'>Activity time</h6>
                     <p className='text-muted mb-0'>{totalTime} minutes</p>
                 </div>
 
 
-                <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center p-3 rounded-3 time-container my-4'>
+                <div className='d-flex  justify-content-between align-items-center p-3 rounded-3 time-container my-4'>
                     <h6 className='mb-0 fw-bold'>Break time</h6>
                     <p className='text-muted mb-0'>{breakTime} seconds</p>
                 </div>

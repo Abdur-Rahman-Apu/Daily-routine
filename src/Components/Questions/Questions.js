@@ -66,7 +66,7 @@ const Questions = () => {
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <p className=''><span className='fw-bold'>Question 3:</span> By using useEffect in React, what can you do except loading data through api?</p>
+                                <p className=''><span className='fw-bold'>Question 3:</span> By using useEffect in React, what can you do except loading data through the API?</p>
                             </button>
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">

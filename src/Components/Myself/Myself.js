@@ -23,11 +23,11 @@ const Myself = () => {
                     <span className='fw-bold'>65</span><small className='text-muted'>Kg</small>
                 </div>
                 <div className='d-flex'>
-                    <p className='me-2'>Height</p>
+                    <p className='me-2'>Height:</p>
                     <span className='fw-bold'>5.4<small className='text-muted'>ft</small></span>
                 </div>
                 <div className='d-flex'>
-                    <p className='me-2'>Age</p>
+                    <p className='me-2'>Age:</p>
                     <span className='fw-bold'>23</span><small className='text-muted'>yrs</small>
                 </div>
             </div>
