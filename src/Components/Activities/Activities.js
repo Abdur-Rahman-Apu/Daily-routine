@@ -18,7 +18,7 @@ const Activities = (props) => {
             <div>
                 <p className='fw-bold my-3'>Select Today's activities</p>
 
-                <div className='row row-cols-3 gy-4'>
+                <div className='row row-cols-1 row-cols-lg-3 gy-4'>
                     {
                         props.activities.map(activity => <Activity key={activity.id} handleBtn={props.handleBtn} activities={activity}></Activity>)
                     }
