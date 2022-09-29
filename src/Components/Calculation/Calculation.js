@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
+import { addToLs, getFromLs } from '../../Utilities/fakeDb';
 import './Calculation.css';
 
 const Calculation = (props) => {
@@ -12,7 +13,17 @@ const Calculation = (props) => {
 
     const handleBreakTime = (e) => {
         setBreakTime(e.target.innerText);
+        addToLs(e.target.innerText);
     }
+
+    useEffect(() => {
+        const storedValue = getFromLs();
+        if (storedValue) {
+            setBreakTime(storedValue);
+        } else {
+            setBreakTime(0);
+        }
+    }, [breakTime])
 
     return (
         <div>
@@ -21,10 +32,10 @@ const Calculation = (props) => {
 
                 <div className='d-flex justify-content-around p-4 btn-container rounded-3'>
                     <button onClick={(e) => handleBreakTime(e)} className='border-0  p-2 rounded-circle  break-btn'><h6>10s</h6></button>
-                    <button className='border-0 p-2 ms-2 rounded-circle break-btn'><h6>20s</h6></button>
-                    <button className='border-0 p-2 ms-2 rounded-circle break-btn'><h6>30s</h6></button>
-                    <button className='border-0  p-2 ms-2 rounded-circle break-btn'><h6>40s</h6></button>
-                    <button className='border-0 p-2 ms-2 rounded-circle break-btn'><h6>50s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2 ms-2 rounded-circle break-btn'><h6>20s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2 ms-2 rounded-circle break-btn'><h6>30s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0  p-2 ms-2 rounded-circle break-btn'><h6>40s</h6></button>
+                    <button onClick={(e) => handleBreakTime(e)} className='border-0 p-2 ms-2 rounded-circle break-btn'><h6>50s</h6></button>
                 </div>
             </div>
 
@@ -40,7 +51,7 @@ const Calculation = (props) => {
 
                 <div className='d-flex justify-content-between align-items-center p-2 rounded-3 time-container my-4'>
                     <h6>Break time</h6>
-                    <p className='text-muted'>{breakTime.substring(0, breakTime.length - 1)} seconds</p>
+                    <p className='text-muted'>{breakTime} seconds</p>
                 </div>
 
                 <div className='text-center '>
