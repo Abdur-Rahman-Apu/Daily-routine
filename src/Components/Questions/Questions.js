@@ -5,7 +5,7 @@ const Questions = () => {
     return (
         <div>
             <div className="title text-center my-5">
-                <h2 className='question-part-title'>Learn to earn knowledge.</h2>
+                <h2 className='question-part-title'>Learn to gain knowledge.</h2>
             </div>
 
             <div className='m-3'>
@@ -18,7 +18,7 @@ const Questions = () => {
                         </h2>
                         <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <p>React is a frontend Javascript framework. It is created by Facebook. It works as a tool for building UI components. It doesn't manipulate browser's DOM directly. Before making the changes in the browser DOM, it creates a virtual DOM in the memory and does all the necessary manipulating. It changes only what needs to be changed.</p>
                             </div>
                         </div>
                     </div >
