@@ -11,7 +11,7 @@
         "img": "https://sph.umich.edu/pursuit/2020posts/2020images/Sleep101.jpg",
         "name": "Sleep",
         "text": "Sleep is important for a human. If you want to increase your activity then you have to sleep 8 hours daily.",
-        "time": ""
+        "time": 45
     },
     {
         "id": 3,
@@ -36,9 +36,9 @@
     },
     {
         "id": 6,
-        "img": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "img": "https://images.unsplash.com/photo-1591291621164-2c6367723315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
         "name": "Exercise",
-        "text": "Exercise is very important for a healthy health. You can do exercise in the morning or in the evening. You can run or push-up or anything as you wish.",
+        "text": "Exercise is very important for a healthy health. You can do exercise in the morning or in the evening. You can run or anything as you wish.",
         "time": 30
     }
 ]

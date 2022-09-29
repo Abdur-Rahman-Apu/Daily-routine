@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home/Home';
-import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {

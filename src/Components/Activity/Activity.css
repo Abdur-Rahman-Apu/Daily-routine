@@ -1,0 +1,14 @@
+.load-btn {
+    border: none;
+    width: 90%;
+    background-color: #487eb0;
+    transition: all 1s;
+}
+
+.load-btn:hover {
+    background-color: #2ed573;
+}
+
+.card-img {
+    height: 100%;
+}

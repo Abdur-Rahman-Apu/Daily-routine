@@ -1,0 +1,29 @@
+.btn-container,
+.time-container {
+    background-color: #dfe4ea;
+}
+
+.activity-btn {
+    background-color: #487eb0;
+    transition: all 1s;
+}
+
+.activity-btn:hover {
+    background-color: #2ed573;
+}
+
+.break-btn {
+    transition: all 1s;
+    background-color: #fff;
+}
+
+.break-btn h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.break-btn:hover {
+    background-color: #2ed573;
+    font-weight: 600;
+    color: white;
+}
