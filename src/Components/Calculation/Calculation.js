@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { addToLs, getFromLs } from '../../Utilities/fakeDb';
 import './Calculation.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Calculation = (props) => {
     let totalTime = 0;
@@ -23,7 +26,13 @@ const Calculation = (props) => {
         } else {
             setBreakTime(0);
         }
-    }, [breakTime])
+    }, [breakTime]);
+
+    const handleToast = () => {
+        toast.success("Congratulations, You have done your activity!", {
+            position: "top-center"
+        });
+    }
 
     return (
         <div>
@@ -55,7 +64,8 @@ const Calculation = (props) => {
                 </div>
 
                 <div className='text-center '>
-                    <button className='px-5 py-2 mt-4 border-0 activity-btn fw-bold w-100 text-white'>Activity Completed</button>
+                    <button onClick={handleToast} className='px-5 py-2 mt-4 border-0 activity-btn fw-bold w-100 text-white'>Activity Completed</button>
+                    <ToastContainer />
                 </div>
             </div>
         </div>
