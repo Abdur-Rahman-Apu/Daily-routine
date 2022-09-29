@@ -6,7 +6,7 @@ const Activity = ({ activities, handleBtn }) => {
     return (
         <div className='col'>
             <div className='card h-100'>
-                <img src={img} className="card-img-top card-img" alt="..." />
+                <img src={img} className="card-img-top card-img" alt="img" />
                 <div className="card-body">
                     <h5 className="card-title fw-bold">{name}</h5>
                     <p className="card-text text-muted">{text}</p>

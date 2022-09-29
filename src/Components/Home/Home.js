@@ -25,10 +25,12 @@ const Home = () => {
     return (
         <div>
             <div className="row flex-column-reverse flex-lg-row">
+
                 <div className="col-12 col-lg-9">
                     <Activities activities={activities} handleBtn={handleBtn}></Activities>
                     <Questions></Questions>
                 </div>
+
                 <div className="col-12 col-lg-3 bg-white">
                     <div>
                         <Myself></Myself>
