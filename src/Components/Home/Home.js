@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Activities from '../Activities/Activities';
 import Calculation from '../Calculation/Calculation';
 import Myself from '../Myself/Myself';
+import Questions from '../Questions/Questions';
 
 
 const Home = () => {
@@ -26,6 +27,7 @@ const Home = () => {
             <div className="row">
                 <div className="col-9">
                     <Activities activities={activities} handleBtn={handleBtn}></Activities>
+                    <Questions></Questions>
                 </div>
                 <div className="col-3 bg-white">
                     <div>
