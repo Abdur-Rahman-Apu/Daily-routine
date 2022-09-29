@@ -25,7 +25,7 @@ const Questions = () => {
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingTwo">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <p className=''><span className='fw-bold'>Question 2:</span>Write down the differences between the props and state in React.</p>
+                                <p className=''><span className='fw-bold'>Question 2:</span>Write down the differences between the props and state in the React.</p>
                             </button>
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
