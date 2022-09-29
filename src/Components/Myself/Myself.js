@@ -7,7 +7,7 @@ import { faLocation } from '@fortawesome/free-solid-svg-icons'
 const Myself = () => {
     return (
         <div className='mx-3'>
-            <div className='d-flex align-items-center my-4'>
+            <div className='d-flex flex-column flex-lg-row align-items-center my-4'>
                 <img src={myImg} alt="img" className='my-img img-fluid rounded-circle' />
                 <div className='ms-3'>
                     <h6 className='fw-bold'>Abdur Rahman Apu</h6>
@@ -17,7 +17,7 @@ const Myself = () => {
 
             <p className=''>I am a software developer. I am currently learning Javascript framework "React".</p>
 
-            <div className='d-flex justify-content-around info-container rounded-3 mt-4'>
+            <div className='d-flex flex-column flex-lg-row justify-content-around align-items-center info-container rounded-3 mt-4'>
                 <div>
                     <span className='fw-bold'>65</span><small className='text-muted'>Kg</small>
                     <p>Weight</p>
