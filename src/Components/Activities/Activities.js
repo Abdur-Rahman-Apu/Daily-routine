@@ -16,7 +16,7 @@ const Activities = (props) => {
 
 
             <div>
-                <p className='fw-bold my-4'>Select Today's activities</p>
+                <h6 className='fw-bold my-4'>Select today's activities</h6>
 
                 <div className='row row-cols-1 row-cols-lg-3 gy-4'>
                     {

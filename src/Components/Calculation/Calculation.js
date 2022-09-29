@@ -37,7 +37,7 @@ const Calculation = (props) => {
     return (
         <div>
             <div className='mx-3 break-section'>
-                <h5 className='my-3'>Add a break</h5>
+                <h5 className='mb-3 mt-5 fw-bold'>Add a break</h5>
 
                 <div className='d-flex flex-column flex-lg-row align-items-center justify-content-around p-4 btn-container rounded-3'>
                     <button onClick={(e) => handleBreakTime(e)} className='border-0  p-2 rounded-circle  break-btn'><h6>10s</h6></button>
@@ -51,20 +51,20 @@ const Calculation = (props) => {
 
             <div className="mx-3 exercise-detail">
 
-                <h5 className='mt-5 mb-4'>Exercise Details</h5>
+                <h5 className='mt-5 mb-4 fw-bold'>Exercise Details</h5>
                 <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center p-2 rounded-3  time-container my-4 p-3'>
-                    <h6 className='mb-0'>Exercise time</h6>
-                    <p className='text-muted mb-0'>{totalTime} seconds</p>
+                    <h6 className='mb-0 fw-bold'>Exercise time</h6>
+                    <p className='text-muted mb-0'>{totalTime} minutes</p>
                 </div>
 
 
                 <div className='d-flex flex-column flex-lg-row justify-content-between align-items-center p-3 rounded-3 time-container my-4'>
-                    <h6 className='mb-0'>Break time</h6>
+                    <h6 className='mb-0 fw-bold'>Break time</h6>
                     <p className='text-muted mb-0'>{breakTime} seconds</p>
                 </div>
 
                 <div className='text-center '>
-                    <button onClick={handleToast} className='px-5 py-2 mt-4 border-0 activity-btn fw-bold w-100 text-white'>Activity Completed</button>
+                    <button onClick={handleToast} className='px-5 py-2 mt-4 border-0 rounded-3 activity-btn fw-bold w-100 text-white'>Activity Completed</button>
                     <ToastContainer />
                 </div>
             </div>

@@ -10,7 +10,7 @@ const Activity = (props) => {
                 <div className="card-body">
                     <h5 className="card-title fw-bold">{name}</h5>
                     <p className="card-text text-muted">{text}</p>
-                    <p><small>Time required:</small> {time}s</p>
+                    <p className='fw-bold'><small>Time required:</small> {time} min</p>
                 </div>
                 <div className="card-footer bg-white text-center">
                     <button type='button' className='load-btn py-2 fw-bold text-white rounded-2' onClick={() => props.handleBtn(props.activities)}>Add to list</button>

@@ -15,7 +15,7 @@ const Myself = () => {
                 </div>
             </div>
 
-            <p className=''>I am a software developer. I am currently learning Javascript framework "React".</p>
+            <p className=''>I am a Junior web developer. I am currently learning Javascript framework "React".</p>
 
             <div className='d-flex flex-column justify-content-around rounded-3 mt-4'>
                 <div className='d-flex'>
