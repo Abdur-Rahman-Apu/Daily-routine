@@ -30,7 +30,36 @@ const Questions = () => {
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <strong>Differences between the props and state:</strong>
+
+                                <div>
+                                    <h5 className='fw-bold mt-4'>Props:</h5>
+                                    <ul>
+                                        <li>The data is passed from one component to another.</li>
+                                        <li>It is immutable</li>
+                                        <li>It can be used with state and functional components.</li>
+                                        <li>Props are read only.</li>
+                                        <li>It allows you to pass data as an argument to other arguments.</li>
+                                        <li>Props are used to communicate between components.</li>
+                                        <li>Stateless component can have props.</li>
+                                        <li>Props make components reusable.</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h5 className='fw-bold mt-4'>State:</h5>
+                                    <ul>
+                                        <li>The data is passed within the component only.</li>
+                                        <li>It is mutable.</li>
+                                        <li>State can be used only with the state or class component (Before 16.0)</li>
+                                        <li>It can be read and write.</li>
+                                        <li>State holds information about the components.</li>
+                                        <li>It can be used for rendering dynamic changes with the component.</li>
+                                        <li>Stateless components can not have state.</li>
+                                        <li>State cannot make components reusable.</li>
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -42,7 +71,30 @@ const Questions = () => {
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <strong>Use cases of useEffect except fetching data:</strong>
+                                <div>
+                                    <ul>
+                                        <li className='mt-3'>
+                                            <p className='fw-bold mb-1'>Running on state change: validating input field</p>
+                                            <p>When the input is being stored in a state using useState, the validation takes place every time with the changes of the input. Validating an input is another great application for useEffect. </p>
+
+                                        </li>
+                                        <li className='mt-3'>
+                                            <p className='fw-bold mb-1'>Running on state change: live filtering</p>
+                                            <p>By using useEffect, we can filter an array "on the fly" by typing letters into an input element. We will need to use a state to save the input and a filter implementation inside the useEffect that will be triggered when the input changes.</p>
+                                        </li>
+
+                                        <li className='mt-3'>
+                                            <p className='fw-bold mb-1'>Running on props change: update paragraph list on fetched API data update</p>
+                                            <p>We want to trigger a state update due to an update fetch() call. We are sending the fetched data to a child component, and whenever that data is changed, the child component re-process it.</p>
+                                        </li>
+
+                                        <li className='mt-3'>
+                                            <p className='fw-bold mb-1'>Running on state change: trigger animation on new array value</p>
+                                            <p>To trigger an animation on a shopping cart as a side effect of adding a new product to it, we can use the useEffect hook.</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
